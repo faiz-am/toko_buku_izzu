@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400..700&display=swap');
+h1{
+    color: aqua;
+    text-decoration: overline;
+}
+span{
+    color: pink;
+}
+.c2{
+    font-size: 21px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+.box{
+    width: 300px;
+    /* height: 300px; */
+    /* padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px; */
+    padding: 50px 100px;
+    text-align: center;
+    /* margin-left: 50px;
+    margin-top: 100px; */
+    border: 10px solid rosybrown;
+}
+.article{
+    background-color: rgb(253, 8, 167);
+}
+.image_web{
+    background-image: url(th.jpg);
+    padding: 100px;
+    /* width: 50px; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card{
+    /* margin: 100px; */
+    border-radius: 100px;
+    width: 300px;
+    height: 300px;
+    box-shadow: 34px 8px 30px -3px rgba(0, 0, 0);
+}

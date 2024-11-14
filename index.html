@@ -4,14 +4,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>faiz web</title>
     <link rel="stylesheet" href="style_index.css">
-    
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <h2>Selamat Datang!</h2>
+            <br>
+            <p>Terima kasih telah mengunjungi website kami.</p>
+            <br>
+            <button class="close-btn" onclick="closePopup()">Tutup</button>
+        </div>
+    </div>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="brand">
-            <h1>Nama Toko</h1>
+    <nav class="header">
+        <div class="company">
+            <a href=""><img src="win.png" alt="" width="25px" height="25px"></a>
+            <p class="corp">FaizCorp</p>
         </div>
-        <ul class="nav-links">
+        <ul class="navbar">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
@@ -19,58 +28,19 @@
         </ul>
     </nav>
     <br><br><br>
+    <div class="content">
     <div class="container">
         <div class="patas">
-            <p><b>Selamat datang di toko buku</b></p>
+            <p><b>Selamat datang di FaizCorp</b></p>
             <br>
-            <p>Di Toko Buku ini kita bisa membeli, membaca, dan meminjam berbagai macam buku yang bisa dibaca</p>
+            <p>FaizCorp menjual banyak hal seperti baju, buku, sepatu, topi dan masih banyak lagi.</p>
             <br>
-            <button type="selengkapnya">selengkapnya</button>
+            <button type="selengkapnya" style="height: 25px; width: 100px;">selengkapnya</button>
         </div>
         <img src="toko buku.jpg" alt="Gambar" width="150">
     </div>
-    <br><br><br><br><br><br><br>
-    <div class="layanan">
-        <div class="service">
-            <br>
-        <p><b>Layanan Kami</b></p>
-        <br>
-        <p>Kami menyediakan jasa peminjaman buku, penjualan buku, dan baca buku ditempat di toko buku kami tersedia
-            banyak genre buku seperti buku fantasy, buku pembelajaran dll</p>
-            <br>
-        </div>
-        <div class="table">
-            <table border="1">
-                <thead align="center">
-                    <tr>
-                        <th>nama</th>
-                        <th>nama</th>
-                        <th>nama</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>okaa</td>
-                        <td>okaaii</td>
-                        <td>okaaiiuu</td>
-                    </tr>
-                    <tr>
-                        <td>okaa</td>
-                        <td>okaaii</td>
-                        <td>okaaiiuu</td>
-                    </tr>
-                    <tr>
-                        <td>okaa</td>
-                        <td>okaaii</td>
-                        <td>okaaiiuu</td>
-                    </tr>
-                </tbody>
-            </table>
-            <br>
-            <br>
-            <br>
-        </div>
-    </div>
+    <br><br><br><br>
+    <hr>
     <div class="produk">
         <div class="prdk">
             <br>
@@ -82,17 +52,69 @@
         <div class="buku">
             <div class="card">
                 <img src="book cover.png" alt="" width="200px">
-                <div class="cp1"><p>buku 1</p></div>
+                <div class="cp1"><p>dragon chased the princes</p></div>
             </div>
             <div class="card2">
                 <img src="book cover.png" alt="" width="200px">
-                <div class="cp2"><p>buku 2</p></div>
+                <div class="cp2"><p>princes wanted to ride the dragon</p></div>
             </div>
             <div class="card3">
                 <img src="book cover.png" alt="" width="200px">
-                <div class="cp3"><p>buku 3</p></div>
+                <div class="cp3"><p>dragon flying and princes running</p></div>
             </div>
         </div>
     </div>
+    <br><br>
+    <div class="layanan">
+        <div class="service">
+            <br>
+        <p><b>Layanan Kami</b></p>
+        <br>
+        <p>kami menjual banyak hal seperti baju, buku, sepatu, topi dan masih banyak lagi.</p>
+            <br>
+        </div>
+        <div class="table">
+            <table border="1">
+                <thead align="center">
+                    <tr>
+                        <th>produk</th>
+                        <th>merk</th>
+                        <th>harga</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>baju</td>
+                        <td>nocopyrightshirt</td>
+                        <td>Rp50.000</td>
+                    </tr>
+                    <tr>
+                        <td>jeans</td>
+                        <td>nocopyrightjeans</td>
+                        <td>Rp50.000</td>
+                    </tr>
+                    <tr>
+                        <td>topi</td>
+                        <td>nocopyrighthat</td>
+                        <td>Rp50.000</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <p class="txt">contact kami</p>
+    <br>
+    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+    <a href=""><i class="fa-brands fa-youtube"></i></a>
+    <a href=""><i class="fa-brands fa-instagram"></i></a>
+    <br>
+    <br>
+</div>
+<script src="index.js"></script>
 </body>
 </html>
